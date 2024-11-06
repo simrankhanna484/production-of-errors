@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Kaleidoscope</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://threejs.org/examples/jsm/objects/Mirror.js"></script>
+
+  <script src="sketch.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Art</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <script src="libraries/p5.gui.js"></script>
+
+      <script src="libraries/quicksettings.js"></script>
+</head>
+<body>
+  
+  <div id="container"></div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        </div>
+        <div id="caption"></div>
+        <section class="masonry-gallery">
+          <div class="gallery-item"><img src="Wabi-sabi-The-art-of-imperfection.jpg" alt="Image 1"></div>
+          <div class="gallery-item"><img src="Wabi-sabi-sentimental-accessories-1.jpg" alt="Image 2"></div>
+          <div class="gallery-item"><img src="Wabi-sabi-The-art-of-imperfection-3.jpg" alt="Image 3"></div>
+          <div class="gallery-item"><img src="kuppi-cafe_east-village-nyc_common-craft_dezeen_hero1-1704x959.jpg" alt="Image 4"></div>
+          <div class="gallery-item"><img src="header-5120x.jpg" alt="Image 5"></div>
+          <div class="gallery-item"><img src="imperfection_wabi_sabi_pexels-jack-hawley-57905.jpg" alt="Image 6"></div>
+          <div class="gallery-item"><img src="wabi-sabi-photography-challenge-13-750px.jpg" alt="Image 7"></div>
+          <div class="gallery-item"><img src="LandscapeXLDiningTableJL19-1-e1614975844956.jpg" alt="Image 8"></div>
+    </div>
+    <script>
+      const images = document.querySelectorAll('#gallery img');
+  
+      images.forEach(image => {
+          image.style.filter = 'grayscale(100%)'; 
+
+          image.addEventListener('mouseover', () => {
+              image.style.filter = 'grayscale(0%)'; 
+          });
+  
+          image.addEventListener('mouseout', () => {
+              image.style.filter = 'grayscale(100%)'; 
+          });
+      });
+      
+  </script>
+  
+    <script src="sketch.js"></script>
+
+    <div id="containez"></div>
+    <section id="wabi-sabi-article" class="scroll-page">
+
+      <article>
+    
+       
+        <h1 class="explosive-fragment">Embracing Imperfection: The Wabi-Sabi Influence in Digital Design</h1>
+        <p>In an age dominated by perfection and polished aesthetics, the principles of wabi-sabi offer a refreshing perspective on design. Originating from Japanese culture, wabi-sabi is centered on the beauty of imperfection, transience, and the natural cycle of growth and decay. As digital designers, incorporating these principles can lead to more emotionally resonant and human-centered technological experiences.</p>
+
+        <h2 class="kinetic-chaos">Understanding Wabi-Sabi</h2>
+        <p>Wabi-sabi can be defined through three main principles:</p><br> 
+        
+        <h3>Impermanence</h3>
+        <p>Everything is in a constant state of flux, and nothing lasts forever. This concept encourages us to appreciate the beauty in fleeting moments and the inevitable changes that come with time.</p>
+        <br> 
+        <h3>Imperfection</h3>
+        <p>Flaws and irregularities contribute to a piece's character and uniqueness. Embracing imperfections allows designers to create work that feels authentic and relatable.</p>
+        <br> 
+        <h3>Simplicity</h3>
+        <p>Wabi-sabi celebrates the beauty of simplicity and minimalism. It encourages a focus on the essential, stripping away the unnecessary to reveal the true essence of an object or experience.</p>
+        
+        <p>By applying these principles, designers can create more meaningful digital experiences that resonate with users on a deeper emotional level.</p>
+
+        <h2 class="kinetic-chaos">The Connection to Digital Design</h2>
+        <p>Incorporating wabi-sabi into digital design can manifest in several ways:</p> <br> 
+        
+        <h3>Aesthetic Choices</h3>
+        <p>Utilizing natural textures, irregular shapes, and organic forms can evoke a sense of authenticity. For example, a website that features hand-drawn illustrations or imperfect typography can foster a feeling of warmth and personal connection.</p>
+        <br> 
+        <h3>Interactive Experiences</h3>
+        <p>Allowing for errors or unexpected interactions in digital interfaces can create a sense of playfulness and engagement. For instance, incorporating glitch effects or animation that embraces randomness can reflect the wabi-sabi principle of imperfection.</p>
+        <br> 
+        <h3>Narrative and Content</h3>
+        <p>Sharing stories that highlight human experiences—such as struggles, mistakes, or moments of beauty in chaos—can connect users to the content on a more personal level. This aligns with the notion of human-centered design, where user experience is prioritized over technical perfection.</p>
+
+        <h2 class="kinetic-chaos">Case Studies</h2>
+        <p>Many contemporary designers and brands are embracing wabi-sabi principles in their work:</p> <br> 
+
+        <h3>Muji</h3>
+        <p>This Japanese retailer is known for its minimalist design and focus on natural materials. Muji products often highlight the beauty of simplicity and functionality, encouraging users to appreciate the imperfections in their everyday lives.</p>
+        <br> 
+        <h3>Tadao Ando</h3>
+        <p>The renowned architect often incorporates wabi-sabi principles in his designs. His use of raw materials, natural light, and open spaces creates environments that foster contemplation and a connection to nature.</p>
+
+        <h2 class="kinetic-chaos">Conclusion</h2>
+        <p>By embracing the principles of wabi-sabi, digital designers have the opportunity to create work that is not only visually appealing but also emotionally resonant. In a world where perfection is often prioritized, acknowledging and celebrating the beauty of imperfection can lead to more authentic and human-centered experiences. The "Production of Errors" embodies this philosophy, inviting users to engage with design in a way that reflects the complexities and nuances of life.</p>
+
+        <h2 class="kinetic-chaos">For Further Reading</h2>
+      
+        <ul>
+          
+            <li><a href="https://mikebifulco.com/newsletter/tech-product-growth-wabi-sabi#wabi-sabiin-tech">Wabi-Sabi - embracing imperfection for tech teams</a></li>
+            <li><a href="https://medium.com/swlh/the-power-to-humanize-technology-fe8b7d4b83fb">The Power to Humanize Technology</a></li>
+            <li><a href="https://www.omaritani.com/blog/wabi-sabi-philosophy-teachings">How Wabi-Sabi Philosophy That Can Drastically Improve Your Life</a></li>
+        </ul>
+    </article>
+</section>
+
+    </section>
+    </div>
+</html>
